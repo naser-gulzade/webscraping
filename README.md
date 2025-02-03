@@ -92,10 +92,10 @@ This endpoint accepts a JSON payload with a list of sitemap and webhook-url opti
 ```json
 {
   "sitemaps": ["https://example.com/sitemap1.xml", "https://example.org/sitemap2.xml"],
-  "webhook_url"
+  "webhook_url": "https://example.com/webhook"
 }
 
-**Example Request:**
+- **Example Request:**
 POST /scrape-by-sitemaps
 Content-Type: application/json
 
