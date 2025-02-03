@@ -76,7 +76,7 @@ class Scraper:
             urls = [urls]
 
         # If more than 10 URLs, run in background
-        if len(urls) > 2 and self.webhook_url:
+        if len(urls) > 10 and self.webhook_url:
             threading.Thread(target=self._scrape_and_send, args=(urls,)).start()
             return {"status": "Processing in background", "message": "Results will be sent to webhook."}
         else:
