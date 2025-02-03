@@ -1,0 +1,6 @@
+FastAPI
+requests
+beautifulsoup4
+httpx
+pydantic
+uvicorn
