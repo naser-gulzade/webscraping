@@ -8,7 +8,6 @@ class Scraper:
     def __init__(self, webhook_url=None):
         self.webhook_url = webhook_url
 
-    
     def scrape_urls_get(self, urls):
         if isinstance(urls, str):
             urls = [urls]
@@ -81,6 +80,7 @@ class Scraper:
             return {"status": "Processing in background", "message": "Results will be sent to webhook."}
         else:
             return self._scrape(urls)
+
 
     def _scrape(self, urls):
         """Scrape URLs synchronously and return results."""

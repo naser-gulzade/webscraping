@@ -7,7 +7,6 @@ from typing import List, Optional
 
 app = FastAPI()
 
-    
 @app.get("/scrape-geturls")
 async def scrape_geturls(urls: str = Query(...)):
     scraper = Scraper()
